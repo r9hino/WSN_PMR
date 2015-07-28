@@ -4,7 +4,7 @@
         "type": "xbee",
         "xbee": "xb1",
         "name": "Relay1",
-        "switchValue": 1,
+        "switchValue": 0,
         "autoMode": 0,
         "autoTime": ""
     },
@@ -13,7 +13,7 @@
         "type": "xbee",
         "xbee": "xb2",
         "name": "Relay2",
-        "switchValue": 1,
+        "switchValue": 0,
         "autoMode": 0,
         "autoTime": ""
     }

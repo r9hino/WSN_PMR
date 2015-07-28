@@ -40,9 +40,9 @@ var xbeeWSN = require('./lib/xbeeWSN');
 var initDevices = require('./lib/initDevices');
 
 // Load preview system state.
-var jsonFileName = __dirname + '/database/systemState.json';
-var loadSystemState = require('./database/loadSystemState');
-var jsonSystemState = loadSystemState();    // Load to memory system's state from systemState.json file.
+var jsonFileName = __dirname + '/database/systemState.json';    // File name where is stored json system state.
+var loadSystemState = require('./database/loadSystemState');    // Load function to retrieve system state in a json format.
+var jsonSystemState = loadSystemState(jsonFileName);    // Load to memory system's state from systemState.json file.
 
 // ThingSpeak initialization.
 var thingspeak = new ThingSpeakClient();
