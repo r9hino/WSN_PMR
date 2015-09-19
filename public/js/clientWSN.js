@@ -10,7 +10,7 @@ $(document).on("pagecreate", function(){
     // Global variables.
     var guiActiveTime = 3*60*1000;  // Miliseconds.
 
-    var socket = io.connect('pipobbb.mooo.com:8888',{
+    var socket = io.connect('controlpmr.mooo.com:8888',{
         forceNew: true,
         rememberUpgrade: true,
         transports: ['xhr-polling', 'websocket', 'flashsocket', 'polling']

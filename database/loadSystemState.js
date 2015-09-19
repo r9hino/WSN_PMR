@@ -9,7 +9,7 @@ function loadSystemState(){
     // This json will be loaded only if there doesn't exist an systemState.json file.
     // i.e. if it is the first time running the script, or if systemState.json was previewsly deleted.
     var jsonSystemState = {
-        "dev2": {
+        "dev1": {
             "id":"dev1",
             "type": "xbee",
             "xbee": "xb1",
@@ -18,20 +18,11 @@ function loadSystemState(){
             "autoMode": 0,
             "autoTime":""
         },
-        "dev3": {
+        "dev2": {
             "id":"dev2",
             "type": "xbee",
             "xbee": "xb2",
             "name": "Relay2",
-            "switchValue": 0,
-            "autoMode": 0,
-            "autoTime":""
-        },
-        "dev4": {
-            "id":"dev3",
-            "type": "xbee",
-            "xbee": "xb3",
-            "name": "Relay3",
             "switchValue": 0,
             "autoMode": 0,
             "autoTime":""

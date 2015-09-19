@@ -29,10 +29,10 @@ var async = require('async');
 var bbb = require('bonescript');
 //var cronJob = require('cron').CronJob;
 //var cronTime = require('cron').CronTime;
-var cronJob = require('/var/lib/cloud9/WSN_BBB/custom_modules/cron').CronJob;
-var cronTime = require('/var/lib/cloud9/WSN_BBB/custom_modules/cron').CronTime;
+var cronJob = require(__dirname + '/custom_modules/cron').CronJob;
+var cronTime = require(__dirname + '/custom_modules/cron').CronTime;
 var SerialPort = require('serialport').SerialPort;
-var xbee_api = require('/var/lib/cloud9/WSN_BBB/custom_modules/xbee-api');
+var xbee_api = require(__dirname + '/custom_modules/xbee-api');
 //var xbee_api = require('xbee-api');
 var ThingSpeakClient = require('thingspeakclient');
 var sysUsage = require('usage');
@@ -47,7 +47,7 @@ var xbeeWSN = require('./lib/xbeeWSN');
 var initDevices = require('./lib/initDevices');
 
 // Load preview system state.
-var jsonFileName = __dirname + "/database/systemState.json";
+var jsonFileName = __dirname + '/database/systemState.json';
 var loadSystemState = require('./database/loadSystemState');
 var jsonSystemState = loadSystemState();    // Load to memory system's state from systemState.json file.
 
@@ -323,10 +323,6 @@ function writeThingSpeakBBBWSN(){
     var fieldsUpdate = {
         field1: (xbee.sensorData['xb1'].tempAccum/xbee.sensorData['xb1'].sampleNum).toFixed(2),
         field2: (xbee.sensorData['xb2'].tempAccum/xbee.sensorData['xb2'].sampleNum).toFixed(2),
-        field3: xbee.sensorData['xb3'].t,
-        field4: xbee.sensorData['xb3'].p,
-        field5: xbee.sensorData['xb3'].h,
-        field6: xbee.sensorData['xb3'].l
     };
     //console.log(fieldsUpdate);
     thingspeak.updateChannel(11818, fieldsUpdate, function(err, resp){
