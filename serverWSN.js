@@ -53,10 +53,6 @@ var jsonSystemState = loadSystemState();    // Load to memory system's state fro
 
 // ThingSpeak initialization.
 var thingspeak = new ThingSpeakClient();
-thingspeak.attachChannel(11818, {writeKey:'1EQD8TANGANJHA3J'}, function(error){
-    if(error)   return console.error('Thingspeak BBB WSN ' + error);
-    console.log('Thingspeak BBB WSN channel ready.');
-});
 thingspeak.attachChannel(32544, {writeKey:'QSGVTNFA0SCP4TP7'}, function(error){
     if(error)   return console.error('ThingSpeak BBB Linux Stats ' + error);
     console.log('Thingspeak BBB Linux Stats channel ready.');
@@ -243,7 +239,7 @@ function socketConnection(socket){
         console.log(timelib.timeNow() + "  Name: " + data.name + 
                     ",  Switch value: " + data.switchValue +
                     ",  AutoMode value: " + data.autoMode +
-                    ",  AutoTime value: " + data.autoTime + ",  Pin: " + data.pin);
+                    ",  AutoTime value: " + data.autoTime);
 
         // Broadcast new system state to everyone.
         io.emit('updateClients', data);
@@ -315,29 +311,6 @@ function xbeeFrameListener(frame){
     }
 }
 
-
-// Update ThingSpeak database each 5 minutes.
-setInterval(writeThingSpeakBBBWSN, 30*1000);
-function writeThingSpeakBBBWSN(){
-    // Create object with temperature averages.
-    var fieldsUpdate = {
-        field1: (xbee.sensorData['xb1'].tempAccum/xbee.sensorData['xb1'].sampleNum).toFixed(2),
-        field2: (xbee.sensorData['xb2'].tempAccum/xbee.sensorData['xb2'].sampleNum).toFixed(2),
-    };
-    //console.log(fieldsUpdate);
-    thingspeak.updateChannel(11818, fieldsUpdate, function(err, resp){
-        if(err || resp <= 0){
-            return console.error('An error ocurred while updating ThingSpeak BBB WSN Channel.');
-        }
-        //else console.log('Update successfully. Entry number was: ' + resp);
-    });
-
-    // Restore sensorData object for new measurements.
-    for(var xbeeKey in xbee.sensorDataAccum){
-        xbee.sensorData[xbeeKey].tempAccum = 0;
-        xbee.sensorData[xbeeKey].sampleNum = 0;
-    }
-}
 
 // Update ThingSpeak database each 20 seconds.
 setInterval(writeThingSpeakBBBLinuxStats, 5*60*1000);
