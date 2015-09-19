@@ -15,17 +15,10 @@
     Authentication: https://github.com/jaredhanson/passport-local/tree/master/examples/login
 */
 
-// Monitoring system modules.
-/*require('nodetime').profile({
-    accountKey: 'e54a03c529e0fcfa708e33d960d219579411194d', 
-    appName: 'serverWSN.js'
-});
-*/
 
 // Application modules
 var fs = require('graceful-fs');    // Handle file system read/write.
 var async = require('async');
-//var Q = require('q');
 var bbb = require('bonescript');
 //var cronJob = require('cron').CronJob;
 //var cronTime = require('cron').CronTime;
