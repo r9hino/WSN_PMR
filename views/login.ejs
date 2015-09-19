@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<!--Fit page width to mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.7, maximum-scale=0.7">
+	
+	<title>Login WSN</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/login.css" type="text/css" />
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="login-page" data-ajax="false">
+        <div data-role="header">
+		    <h2>Login WSN</h2>
+	    </div>
+
+        <div id="logo-image">
+            <img src="images/logo128.png"  alt="Image Logo" >
+        </div>
+
+        <div data-role="main" class="ui-content" data-ajax="false">
+            <form method="post" action="/login" data-ajax="false">
+                <div class="ui-field-contain">
+                    <input type="text" name="username" id="username" placeholder="Username"/>
+	                <input type="password" name="password" id="password" placeholder="Password"/>
+                </div>
+                <input type="submit" id="login-btn" value="Login">
+
+                <% if (message) { %>
+                <p id="login-message" style="color:red"><%= message %></p>
+                <% } %>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

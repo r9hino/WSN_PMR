@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+	<!--Fit page width to mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+	
+	<title>Home WSN</title>
+	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/clientWSN.css" type="text/css" />
+</head> 
+ 
+<body>
+    <!-- ******************* Page 2 ***************** -->
+    <div data-role="page" id="page2">
+        <div data-role="header">
+		    <div data-role="navbar">
+                <ul>
+                <li><a href="/" data-icon="home" data-ajax="false">Control Panel</a></li>
+                <li><a href="/sensordata" data-icon="eye" class="ui-btn-active ui-state-persist">Sensor Data</a></li>
+                </ul>
+            </div>
+	    </div>
+
+	    <div data-role="main" class="ui-content">
+	        <div id="sensor-iframes">
+	            <iframe width="450" height="260" 
+	                style="border: 1px solid #cccccc;" 
+	                src="http://api.thingspeak.com/channels/11818/charts/1?width=450&height=260&results=240&days=1&dynamic=false&type=spline&yaxis=Temperatura%20%C2%B0C&xaxis=Tiempo&title=Xbee%201%3A%20Temp%20%C2%B0C%20Living" >
+	            </iframe>
+
+                <iframe width="450" height="260" 
+                    style="border: 1px solid #cccccc;" 
+                    src="http://api.thingspeak.com/channels/11818/charts/2?width=450&height=260&results=240&days=1&dynamic=false&type=spline&yaxis=Temperatura%20C%C2%B0&xaxis=Tiempo&title=Xbee%202%3A%20Temp%20%C2%B0C%20Pieza%20Raul" >
+                </iframe>
+                
+                <iframe width="450" height="260" 
+                    style="border: 1px solid #cccccc;" 
+                    src="http://api.thingspeak.com/channels/11818/charts/3?width=450&height=260&results=240&days=1&dynamic=true&type=spline&yaxis=Temperatura%20C%C2%B0&xaxis=Tiempo&title=Xbee%203%3A%20Temperatura%20Pieza%20Pipo" >
+                </iframe>
+                
+                <iframe width="450" height="260" 
+                    style="border: 1px solid #cccccc;" 
+                    src="http://api.thingspeak.com/channels/11818/charts/4?width=450&height=260&results=240&days=1&dynamic=true&type=spline&yaxis=Presion%20Pa&xaxis=Time&title=Xbee%203%3A%20Presion%20Pieza%20Pipo" >
+                </iframe>
+                
+                <iframe width="450" height="260"
+                    style="border: 1px solid #cccccc;"
+                    src="http://api.thingspeak.com/channels/11818/charts/5?width=450&height=260&results=240&days=1&dynamic=true&type=spline&yaxis=Humedad%20Relativa%20%25&xaxis=Tiempo&title=Xbee%203%3A%20Humedad%20Pieza%20Pipo" >
+                </iframe>
+                
+                <iframe width="450" height="260" 
+                    style="border: 1px solid #cccccc;" 
+                    src="http://api.thingspeak.com/channels/11818/charts/6?width=450&height=260&results=240&days=1&dynamic=true&type=spline&yaxis=Luminosidad%20Lux&xaxis=Tiempo&title=Xbee%203%3A%20Luminosidad%20Pieza%20Pipo" >
+                </iframe>
+            </div>
+	    </div>
+	    
+	    <div data-role="footer" data-position="fixed">
+		    <img id="logo-footer" src="images/logo32.png" />
+		    <h1 id="title-footer">Pipo WSN </h1>
+	    </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+
+</html>
+
+    

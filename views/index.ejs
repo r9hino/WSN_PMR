@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+	<!--Fit page width to mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+
+	<title>Home WSN</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/clientWSN.css" type="text/css" />
+</head> 
+ 
+<body>
+    <!-- ******************* Page 1 ***************** -->
+    <!-- data-ajax="false" avoid losing elements when back button is pressed when already logged in. -->
+    <div data-role="page" id="page1" data-ajax="false">
+	    <div data-role="header">
+		    <div data-role="navbar">
+                <ul>
+                <li><a href="/" data-icon="home" class="ui-btn-active ui-state-persist">Control Panel</a></li>
+                <li><a href="/sensordata" data-icon="eye">Sensor Data</a></li>
+                </ul>
+            </div>
+	    </div>
+
+	    <div data-role="main" class="ui-content" data-ajax="false">
+	        <div id="controlPanel">
+            </div>
+	    </div>
+	    
+	    <div data-role="footer" data-position="fixed">
+		    <img id="logo-footer" src="images/logo32.png" height="32" width="25"/>
+		    <h1 id="title-footer">Pipo WSN </h1>
+		    <span id="connectionStatus"></span>
+	    </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+	<script src="js/clientWSN.js" type="text/javascript"></script>
+	<script src="js/touche.js" type="text/javascript"></script><!--Remove 300ms delay on safari-->
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+#logo-image {
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+/* Remove pale yellow color in input form when autofill is on. 
+    http://labs.enonic.com/articles/remove-forced-yellow-input-background-in-chrome
+*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}

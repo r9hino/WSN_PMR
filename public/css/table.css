@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Example from: http://www.w3schools.com/html/html_tables.asp*/
+
+table.reference{
+    border:             #eeeeee;
+	border-collapse:    collapse;
+	width:              100%;
+	vertical-align:     center;
+}
+
+table.reference th{
+    border:             2px solid #dddddd;
+    background-color:   #cccccc;
+	color:              #333333;
+	padding-top:        3px;
+	padding-bottom:     3px;
+	vertical-align:     center;
+	text-align:         center;
+	font-size:          95%;
+}
+
+#th-nodes{
+    width: 60px;
+}
+#th-status{
+    width: 60px;
+}
+#th-16BitAddr{
+    width: 80px;
+}
+
+table.reference tr:nth-child(even){
+    border-top:         1px solid #dddddd;
+    border-bottom:      1px solid #dddddd;
+    border-left:        2px solid #eeeeee;
+    border-right:       2px solid #eeeeee;
+    background-color:   #eeeeee;
+}
+table.reference tr:nth-child(odd){
+    border-left:        2px solid #f8f8f8;
+    border-right:       2px solid #f8f8f8;
+    background-color:   #f8f8f8;
+}
+
+table.reference td{
+	padding-top:        3px;
+	padding-bottom:     3px;
+	vertical-align:     center;
+	text-align:         center;
+	font-size:          95%;
+}

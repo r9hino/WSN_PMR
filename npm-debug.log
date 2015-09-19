@@ -1,0 +1,741 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'i2c', '--save' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.38
+4 warn package.json WSN@1.0.0 No README data
+5 warn package.json async@1.4.2 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'i2c', null ]
+8 verbose cache add name=undefined spec="i2c" args=["i2c",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'i2c',
+9 verbose parsed url   path: 'i2c',
+9 verbose parsed url   href: 'i2c' }
+10 silly lockFile 0491341d-i2c i2c
+11 verbose lock i2c /root/.npm/0491341d-i2c.lock
+12 silly lockFile 0491341d-i2c i2c
+13 silly lockFile 0491341d-i2c i2c
+14 verbose addNamed [ 'i2c', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile f50d1c5b-i2c i2c@
+17 verbose lock i2c@ /root/.npm/f50d1c5b-i2c.lock
+18 silly addNameRange { name: 'i2c', range: '*', hasData: false }
+19 verbose request where is /i2c
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 426570984e2ad4d0
+22 verbose url raw /i2c
+23 verbose url resolving [ 'https://registry.npmjs.org/', './i2c' ]
+24 verbose url resolved https://registry.npmjs.org/i2c
+25 verbose request where is https://registry.npmjs.org/i2c
+26 info trying registry request attempt 1 at 14:52:01
+27 verbose etag "CLY0TF6FO9F6QU25LT9BZURXR"
+28 http GET https://registry.npmjs.org/i2c
+29 http 304 https://registry.npmjs.org/i2c
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Tue, 08 Sep 2015 17:52:02 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'cache-control': 'max-age=60',
+30 silly registry.get     etag: '"CLY0TF6FO9F6QU25LT9BZURXR"',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-atl6226-ATL',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1441734722.687282,VS0,VE89',
+30 silly registry.get     vary: 'Accept' } ]
+31 verbose etag https://registry.npmjs.org/i2c from cache
+32 silly addNameRange number 2 { name: 'i2c', range: '*', hasData: true }
+33 silly addNameRange versions [ 'i2c',
+33 silly addNameRange   [ '0.0.1',
+33 silly addNameRange     '0.0.2',
+33 silly addNameRange     '0.0.3',
+33 silly addNameRange     '0.0.4',
+33 silly addNameRange     '0.0.5',
+33 silly addNameRange     '0.1.0',
+33 silly addNameRange     '0.1.1',
+33 silly addNameRange     '0.1.2',
+33 silly addNameRange     '0.1.3',
+33 silly addNameRange     '0.1.4',
+33 silly addNameRange     '0.1.5',
+33 silly addNameRange     '0.1.6',
+33 silly addNameRange     '0.1.7',
+33 silly addNameRange     '0.1.8',
+33 silly addNameRange     '0.2.0',
+33 silly addNameRange     '0.2.1' ] ]
+34 verbose addNamed [ 'i2c', '0.2.1' ]
+35 verbose addNamed [ '0.2.1', '0.2.1' ]
+36 silly lockFile fd7bdaf7-i2c-0-2-1 i2c@0.2.1
+37 verbose lock i2c@0.2.1 /root/.npm/fd7bdaf7-i2c-0-2-1.lock
+38 silly lockFile 95f1f67a-stry-npmjs-org-i2c-i2c-0-2-1-tgz https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+39 verbose lock https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz /root/.npm/95f1f67a-stry-npmjs-org-i2c-i2c-0-2-1-tgz.lock
+40 verbose addRemoteTarball [ 'https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz',
+40 verbose addRemoteTarball   'e5687031c60acf09aa7ea9d35221a9e9161e0abc' ]
+41 info retry fetch attempt 1 at 14:52:03
+42 verbose fetch to= /tmp/npm-23100-QdjUpuHn/registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+43 http GET https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+44 http 200 https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+45 silly lockFile 95f1f67a-stry-npmjs-org-i2c-i2c-0-2-1-tgz https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+46 silly lockFile 95f1f67a-stry-npmjs-org-i2c-i2c-0-2-1-tgz https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz
+47 silly lockFile fd7bdaf7-i2c-0-2-1 i2c@0.2.1
+48 silly lockFile fd7bdaf7-i2c-0-2-1 i2c@0.2.1
+49 silly lockFile f50d1c5b-i2c i2c@
+50 silly lockFile f50d1c5b-i2c i2c@
+51 silly resolved [ { name: 'i2c',
+51 silly resolved     version: '0.2.1',
+51 silly resolved     description: 'Native bindings for i2c-dev. Plays well with Raspberry Pi and BeagleBone.',
+51 silly resolved     main: 'main.js',
+51 silly resolved     author: { name: 'Kelly Korevec' },
+51 silly resolved     repository: { type: 'git', url: 'http://github.com/korevec/node-i2c.git' },
+51 silly resolved     license: 'BSD',
+51 silly resolved     dependencies:
+51 silly resolved      { bindings: '1.2.1',
+51 silly resolved        underscore: '1.8.2',
+51 silly resolved        'coffee-script': '1.9.1',
+51 silly resolved        repl: '0.1.3' },
+51 silly resolved     engine: 'node >= 0.12.0',
+51 silly resolved     scripts: { install: 'node-gyp rebuild' },
+51 silly resolved     gypfile: true,
+51 silly resolved     bugs: { url: 'https://github.com/korevec/node-i2c/issues' },
+51 silly resolved     homepage: 'https://github.com/korevec/node-i2c',
+51 silly resolved     _id: 'i2c@0.2.1',
+51 silly resolved     dist:
+51 silly resolved      { shasum: 'e5687031c60acf09aa7ea9d35221a9e9161e0abc',
+51 silly resolved        tarball: 'http://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz' },
+51 silly resolved     _from: 'i2c@',
+51 silly resolved     _npmVersion: '1.3.14',
+51 silly resolved     _npmUser: { name: 'kelly', email: 'korevec@gmail.com' },
+51 silly resolved     maintainers: [ [Object] ],
+51 silly resolved     directories: {},
+51 silly resolved     _shasum: 'e5687031c60acf09aa7ea9d35221a9e9161e0abc',
+51 silly resolved     _resolved: 'https://registry.npmjs.org/i2c/-/i2c-0.2.1.tgz' } ]
+52 info install i2c@0.2.1 into /var/lib/cloud9/WSN_BBB
+53 info installOne i2c@0.2.1
+54 verbose node_modules/i2c unbuild
+55 verbose tar unpack /root/.npm/i2c/0.2.1/package.tgz
+56 silly lockFile 708eb8e0--cloud9-WSN-BBB-node-modules-i2c tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c
+57 verbose lock tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c /root/.npm/708eb8e0--cloud9-WSN-BBB-node-modules-i2c.lock
+58 silly lockFile ac0afef7-r-root-npm-i2c-0-2-1-package-tgz tar:///root/.npm/i2c/0.2.1/package.tgz
+59 verbose lock tar:///root/.npm/i2c/0.2.1/package.tgz /root/.npm/ac0afef7-r-root-npm-i2c-0-2-1-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry main.js
+66 silly gunzTarPerm extractEntry binding.gyp
+67 silly gunzTarPerm extractEntry examples/accelerometer/accel.coffee
+68 silly gunzTarPerm extractEntry examples/blinkm/blinkm.coffee
+69 silly gunzTarPerm extractEntry lib/i2c.coffee
+70 silly gunzTarPerm extractEntry src/i2c-dev.c
+71 silly gunzTarPerm extractEntry src/i2c-dev.h
+72 silly gunzTarPerm extractEntry src/i2c.cc
+73 silly lockFile 708eb8e0--cloud9-WSN-BBB-node-modules-i2c tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c
+74 silly lockFile 708eb8e0--cloud9-WSN-BBB-node-modules-i2c tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c
+75 silly lockFile ac0afef7-r-root-npm-i2c-0-2-1-package-tgz tar:///root/.npm/i2c/0.2.1/package.tgz
+76 silly lockFile ac0afef7-r-root-npm-i2c-0-2-1-package-tgz tar:///root/.npm/i2c/0.2.1/package.tgz
+77 info preinstall i2c@0.2.1
+78 verbose readDependencies using package.json deps
+79 verbose readDependencies using package.json deps
+80 verbose cache add [ 'repl@0.1.3', null ]
+81 verbose cache add name=undefined spec="repl@0.1.3" args=["repl@0.1.3",null]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: 'repl@0.1.3',
+82 verbose parsed url   path: 'repl@0.1.3',
+82 verbose parsed url   href: 'repl@0.1.3' }
+83 verbose cache add [ 'bindings@1.2.1', null ]
+84 verbose cache add name=undefined spec="bindings@1.2.1" args=["bindings@1.2.1",null]
+85 verbose parsed url { protocol: null,
+85 verbose parsed url   slashes: null,
+85 verbose parsed url   auth: null,
+85 verbose parsed url   host: null,
+85 verbose parsed url   port: null,
+85 verbose parsed url   hostname: null,
+85 verbose parsed url   hash: null,
+85 verbose parsed url   search: null,
+85 verbose parsed url   query: null,
+85 verbose parsed url   pathname: 'bindings@1.2.1',
+85 verbose parsed url   path: 'bindings@1.2.1',
+85 verbose parsed url   href: 'bindings@1.2.1' }
+86 verbose cache add [ 'underscore@1.8.2', null ]
+87 verbose cache add name=undefined spec="underscore@1.8.2" args=["underscore@1.8.2",null]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: 'underscore@1.8.2',
+88 verbose parsed url   path: 'underscore@1.8.2',
+88 verbose parsed url   href: 'underscore@1.8.2' }
+89 verbose cache add [ 'coffee-script@1.9.1', null ]
+90 verbose cache add name=undefined spec="coffee-script@1.9.1" args=["coffee-script@1.9.1",null]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: 'coffee-script@1.9.1',
+91 verbose parsed url   path: 'coffee-script@1.9.1',
+91 verbose parsed url   href: 'coffee-script@1.9.1' }
+92 verbose cache add name="repl" spec="0.1.3" args=["repl","0.1.3"]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: '0.1.3',
+93 verbose parsed url   path: '0.1.3',
+93 verbose parsed url   href: '0.1.3' }
+94 verbose addNamed [ 'repl', '0.1.3' ]
+95 verbose addNamed [ '0.1.3', '0.1.3' ]
+96 silly lockFile 7750b660-repl-0-1-3 repl@0.1.3
+97 verbose lock repl@0.1.3 /root/.npm/7750b660-repl-0-1-3.lock
+98 verbose cache add name="bindings" spec="1.2.1" args=["bindings","1.2.1"]
+99 verbose parsed url { protocol: null,
+99 verbose parsed url   slashes: null,
+99 verbose parsed url   auth: null,
+99 verbose parsed url   host: null,
+99 verbose parsed url   port: null,
+99 verbose parsed url   hostname: null,
+99 verbose parsed url   hash: null,
+99 verbose parsed url   search: null,
+99 verbose parsed url   query: null,
+99 verbose parsed url   pathname: '1.2.1',
+99 verbose parsed url   path: '1.2.1',
+99 verbose parsed url   href: '1.2.1' }
+100 verbose addNamed [ 'bindings', '1.2.1' ]
+101 verbose addNamed [ '1.2.1', '1.2.1' ]
+102 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+103 verbose lock bindings@1.2.1 /root/.npm/e9060511-bindings-1-2-1.lock
+104 verbose cache add name="underscore" spec="1.8.2" args=["underscore","1.8.2"]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: '1.8.2',
+105 verbose parsed url   path: '1.8.2',
+105 verbose parsed url   href: '1.8.2' }
+106 verbose addNamed [ 'underscore', '1.8.2' ]
+107 verbose addNamed [ '1.8.2', '1.8.2' ]
+108 silly lockFile 004e52f6-underscore-1-8-2 underscore@1.8.2
+109 verbose lock underscore@1.8.2 /root/.npm/004e52f6-underscore-1-8-2.lock
+110 verbose cache add name="coffee-script" spec="1.9.1" args=["coffee-script","1.9.1"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '1.9.1',
+111 verbose parsed url   path: '1.9.1',
+111 verbose parsed url   href: '1.9.1' }
+112 verbose addNamed [ 'coffee-script', '1.9.1' ]
+113 verbose addNamed [ '1.9.1', '1.9.1' ]
+114 silly lockFile 98732453-coffee-script-1-9-1 coffee-script@1.9.1
+115 verbose lock coffee-script@1.9.1 /root/.npm/98732453-coffee-script-1-9-1.lock
+116 verbose request where is /repl
+117 verbose request registry https://registry.npmjs.org/
+118 verbose url raw /repl
+119 verbose url resolving [ 'https://registry.npmjs.org/', './repl' ]
+120 verbose url resolved https://registry.npmjs.org/repl
+121 verbose request where is https://registry.npmjs.org/repl
+122 info trying registry request attempt 1 at 14:52:07
+123 verbose etag "3VRGHJJU6ILI2IGC4MJR5CJWU"
+124 http GET https://registry.npmjs.org/repl
+125 verbose request where is /bindings
+126 verbose request registry https://registry.npmjs.org/
+127 verbose url raw /bindings
+128 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+129 verbose url resolved https://registry.npmjs.org/bindings
+130 verbose request where is https://registry.npmjs.org/bindings
+131 info trying registry request attempt 1 at 14:52:08
+132 verbose etag "C703GY7AAJXUO0UMZR0WSP7SV"
+133 http GET https://registry.npmjs.org/bindings
+134 verbose request where is /underscore
+135 verbose request registry https://registry.npmjs.org/
+136 verbose url raw /underscore
+137 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+138 verbose url resolved https://registry.npmjs.org/underscore
+139 verbose request where is https://registry.npmjs.org/underscore
+140 info trying registry request attempt 1 at 14:52:08
+141 verbose etag "5SXAYW4GTHCZN7QTNH33JNYMH"
+142 http GET https://registry.npmjs.org/underscore
+143 verbose request where is /coffee-script
+144 verbose request registry https://registry.npmjs.org/
+145 verbose url raw /coffee-script
+146 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+147 verbose url resolved https://registry.npmjs.org/coffee-script
+148 verbose request where is https://registry.npmjs.org/coffee-script
+149 info trying registry request attempt 1 at 14:52:08
+150 verbose etag "AFAT3UYR3FHP7A5Y2WW3YY69O"
+151 http GET https://registry.npmjs.org/coffee-script
+152 http 200 https://registry.npmjs.org/repl
+153 silly registry.get cb [ 200,
+153 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+153 silly registry.get     etag: '"B2YIZ9SHIPM70CR4ZZI8WJ13O"',
+153 silly registry.get     'content-type': 'application/json',
+153 silly registry.get     'cache-control': 'max-age=60',
+153 silly registry.get     'content-length': '3356',
+153 silly registry.get     'accept-ranges': 'bytes',
+153 silly registry.get     date: 'Tue, 08 Sep 2015 17:52:09 GMT',
+153 silly registry.get     via: '1.1 varnish',
+153 silly registry.get     age: '0',
+153 silly registry.get     connection: 'keep-alive',
+153 silly registry.get     'x-served-by': 'cache-jfk1021-JFK',
+153 silly registry.get     'x-cache': 'MISS',
+153 silly registry.get     'x-cache-hits': '0',
+153 silly registry.get     'x-timer': 'S1441734729.198682,VS0,VE19',
+153 silly registry.get     vary: 'Accept' } ]
+154 http 200 https://registry.npmjs.org/underscore
+155 silly registry.get cb [ 200,
+155 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+155 silly registry.get     etag: '"3SAN6PYMF4WX7LQZH81QT42RD"',
+155 silly registry.get     'content-type': 'application/json',
+155 silly registry.get     'cache-control': 'max-age=60',
+155 silly registry.get     'content-length': '41258',
+155 silly registry.get     'accept-ranges': 'bytes',
+155 silly registry.get     date: 'Tue, 08 Sep 2015 17:52:09 GMT',
+155 silly registry.get     via: '1.1 varnish',
+155 silly registry.get     age: '35',
+155 silly registry.get     connection: 'keep-alive',
+155 silly registry.get     'x-served-by': 'cache-sjc3125-SJC',
+155 silly registry.get     'x-cache': 'HIT',
+155 silly registry.get     'x-cache-hits': '2',
+155 silly registry.get     'x-timer': 'S1441734729.248682,VS0,VE0',
+155 silly registry.get     vary: 'Accept' } ]
+156 http 304 https://registry.npmjs.org/bindings
+157 silly registry.get cb [ 304,
+157 silly registry.get   { date: 'Tue, 08 Sep 2015 17:52:09 GMT',
+157 silly registry.get     via: '1.1 varnish',
+157 silly registry.get     'cache-control': 'max-age=60',
+157 silly registry.get     etag: '"C703GY7AAJXUO0UMZR0WSP7SV"',
+157 silly registry.get     age: '18',
+157 silly registry.get     connection: 'keep-alive',
+157 silly registry.get     'x-served-by': 'cache-atl6229-ATL',
+157 silly registry.get     'x-cache': 'HIT',
+157 silly registry.get     'x-cache-hits': '1',
+157 silly registry.get     'x-timer': 'S1441734729.389497,VS0,VE2',
+157 silly registry.get     vary: 'Accept' } ]
+158 verbose etag https://registry.npmjs.org/bindings from cache
+159 http 200 https://registry.npmjs.org/coffee-script
+160 silly registry.get cb [ 200,
+160 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+160 silly registry.get     etag: '"51QE2SRG1308OKWQZKY2BCZT6"',
+160 silly registry.get     'content-type': 'application/json',
+160 silly registry.get     'cache-control': 'max-age=60',
+160 silly registry.get     'content-length': '40853',
+160 silly registry.get     'accept-ranges': 'bytes',
+160 silly registry.get     date: 'Tue, 08 Sep 2015 17:52:09 GMT',
+160 silly registry.get     via: '1.1 varnish',
+160 silly registry.get     age: '33',
+160 silly registry.get     connection: 'keep-alive',
+160 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
+160 silly registry.get     'x-cache': 'HIT',
+160 silly registry.get     'x-cache-hits': '1',
+160 silly registry.get     'x-timer': 'S1441734729.225042,VS0,VE0',
+160 silly registry.get     vary: 'Accept' } ]
+161 silly lockFile 5bb20ce6-ry-npmjs-org-repl-repl-0-1-3-tgz https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+162 verbose lock https://registry.npmjs.org/repl/-/repl-0.1.3.tgz /root/.npm/5bb20ce6-ry-npmjs-org-repl-repl-0-1-3-tgz.lock
+163 verbose addRemoteTarball [ 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz',
+163 verbose addRemoteTarball   '2f05d42b0c88b43d05ccbda10ed14aeff5699b60' ]
+164 silly lockFile 922b9b3e--underscore-underscore-1-8-2-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+165 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz /root/.npm/922b9b3e--underscore-underscore-1-8-2-tgz.lock
+166 info retry fetch attempt 1 at 14:52:10
+167 verbose fetch to= /tmp/npm-23100-QdjUpuHn/registry.npmjs.org/repl/-/repl-0.1.3.tgz
+168 silly lockFile 60df5a0a-e-script-coffee-script-1-9-1-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+169 verbose lock https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz /root/.npm/60df5a0a-e-script-coffee-script-1-9-1-tgz.lock
+170 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz',
+170 verbose addRemoteTarball   '64df2eb590899de950782f3735190ba42ebf311d' ]
+171 http GET https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+172 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz',
+172 verbose addRemoteTarball   'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31' ]
+173 info retry fetch attempt 1 at 14:52:10
+174 verbose fetch to= /tmp/npm-23100-QdjUpuHn/registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+175 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+176 silly lockFile e9060511-bindings-1-2-1 bindings@1.2.1
+177 info retry fetch attempt 1 at 14:52:10
+178 verbose fetch to= /tmp/npm-23100-QdjUpuHn/registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+179 http GET https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+180 http GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+181 http 200 https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+182 silly lockFile 5bb20ce6-ry-npmjs-org-repl-repl-0-1-3-tgz https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+183 silly lockFile 5bb20ce6-ry-npmjs-org-repl-repl-0-1-3-tgz https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+184 silly lockFile 7750b660-repl-0-1-3 repl@0.1.3
+185 silly lockFile 7750b660-repl-0-1-3 repl@0.1.3
+186 http 200 https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+187 http 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+188 silly lockFile 922b9b3e--underscore-underscore-1-8-2-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+189 silly lockFile 922b9b3e--underscore-underscore-1-8-2-tgz https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+190 silly lockFile 004e52f6-underscore-1-8-2 underscore@1.8.2
+191 silly lockFile 004e52f6-underscore-1-8-2 underscore@1.8.2
+192 silly lockFile 60df5a0a-e-script-coffee-script-1-9-1-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+193 silly lockFile 60df5a0a-e-script-coffee-script-1-9-1-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+194 silly lockFile 98732453-coffee-script-1-9-1 coffee-script@1.9.1
+195 silly lockFile 98732453-coffee-script-1-9-1 coffee-script@1.9.1
+196 silly resolved [ { name: 'bindings',
+196 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+196 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+196 silly resolved     version: '1.2.1',
+196 silly resolved     author:
+196 silly resolved      { name: 'Nathan Rajlich',
+196 silly resolved        email: 'nathan@tootallnate.net',
+196 silly resolved        url: 'http://tootallnate.net' },
+196 silly resolved     repository:
+196 silly resolved      { type: 'git',
+196 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+196 silly resolved     main: './bindings.js',
+196 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+196 silly resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+196 silly resolved     license: 'MIT',
+196 silly resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+196 silly resolved     _id: 'bindings@1.2.1',
+196 silly resolved     scripts: {},
+196 silly resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+196 silly resolved     _from: 'bindings@1.2.1',
+196 silly resolved     _npmVersion: '1.4.14',
+196 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+196 silly resolved     maintainers: [ [Object], [Object] ],
+196 silly resolved     dist:
+196 silly resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+196 silly resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+196 silly resolved     directories: {},
+196 silly resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+196 silly resolved     readme: 'ERROR: No README data found!' },
+196 silly resolved   { name: 'repl',
+196 silly resolved     author: { name: 'Firejune', url: 'http://firejune.com/' },
+196 silly resolved     version: '0.1.3',
+196 silly resolved     description: 'A simple fast template libray.',
+196 silly resolved     homepage: 'http://github.com/firejune/repl',
+196 silly resolved     keywords: [ 'template', 'engine', 'repl' ],
+196 silly resolved     main: 'lib/template',
+196 silly resolved     directories: { lib: 'lib' },
+196 silly resolved     repository: { type: 'git', url: 'git://github.com/firejune/repl.git' },
+196 silly resolved     licenses: [ [Object] ],
+196 silly resolved     bugs: { url: 'http://github.com/firejune/repl/issues' },
+196 silly resolved     engines: { node: '>= 0.4.0' },
+196 silly resolved     _npmUser: { name: 'firejune', email: 'to@firejune.com' },
+196 silly resolved     _id: 'repl@0.1.3',
+196 silly resolved     dependencies: {},
+196 silly resolved     devDependencies: {},
+196 silly resolved     _engineSupported: true,
+196 silly resolved     _npmVersion: '1.0.94',
+196 silly resolved     _nodeVersion: 'v0.4.12',
+196 silly resolved     _defaultsLoaded: true,
+196 silly resolved     dist:
+196 silly resolved      { shasum: '2f05d42b0c88b43d05ccbda10ed14aeff5699b60',
+196 silly resolved        tarball: 'http://registry.npmjs.org/repl/-/repl-0.1.3.tgz' },
+196 silly resolved     maintainers: [ [Object] ],
+196 silly resolved     _shasum: '2f05d42b0c88b43d05ccbda10ed14aeff5699b60',
+196 silly resolved     _from: 'repl@0.1.3',
+196 silly resolved     _resolved: 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz' },
+196 silly resolved   { name: 'underscore',
+196 silly resolved     description: 'JavaScript\'s functional programming helper library.',
+196 silly resolved     homepage: 'http://underscorejs.org',
+196 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+196 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+196 silly resolved     repository:
+196 silly resolved      { type: 'git',
+196 silly resolved        url: 'git://github.com/jashkenas/underscore.git' },
+196 silly resolved     main: 'underscore.js',
+196 silly resolved     version: '1.8.2',
+196 silly resolved     devDependencies:
+196 silly resolved      { docco: '*',
+196 silly resolved        eslint: '0.6.x',
+196 silly resolved        karma: '~0.12.31',
+196 silly resolved        'karma-qunit': '~0.1.4',
+196 silly resolved        'qunit-cli': '~0.2.0',
+196 silly resolved        'uglify-js': '2.4.x' },
+196 silly resolved     scripts:
+196 silly resolved      { test: 'npm run test-node && npm run lint',
+196 silly resolved        lint: 'eslint underscore.js test/*.js',
+196 silly resolved        'test-node': 'qunit-cli test/*.js',
+196 silly resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+196 silly resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+196 silly resolved        doc: 'docco underscore.js' },
+196 silly resolved     license: 'MIT',
+196 silly resolved     files:
+196 silly resolved      [ 'underscore.js',
+196 silly resolved        'underscore-min.js',
+196 silly resolved        'underscore-min.map',
+196 silly resolved        'LICENSE' ],
+196 silly resolved     gitHead: '19db749b190a7cb5a8b7ab1aab42c0e9dc517250',
+196 silly resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+196 silly resolved     _id: 'underscore@1.8.2',
+196 silly resolved     _shasum: '64df2eb590899de950782f3735190ba42ebf311d',
+196 silly resolved     _from: 'underscore@1.8.2',
+196 silly resolved     _npmVersion: '1.4.28',
+196 silly resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+196 silly resolved     maintainers: [ [Object] ],
+196 silly resolved     dist:
+196 silly resolved      { shasum: '64df2eb590899de950782f3735190ba42ebf311d',
+196 silly resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz' },
+196 silly resolved     directories: {},
+196 silly resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz' },
+196 silly resolved   { name: 'coffee-script',
+196 silly resolved     description: 'Unfancy JavaScript',
+196 silly resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+196 silly resolved     author: { name: 'Jeremy Ashkenas' },
+196 silly resolved     version: '1.9.1',
+196 silly resolved     license: 'MIT',
+196 silly resolved     engines: { node: '>=0.8.0' },
+196 silly resolved     directories: { lib: './lib/coffee-script' },
+196 silly resolved     main: './lib/coffee-script/coffee-script',
+196 silly resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+196 silly resolved     preferGlobal: true,
+196 silly resolved     scripts:
+196 silly resolved      { test: 'node ./bin/cake test',
+196 silly resolved        'test-harmony': 'node --harmony ./bin/cake test' },
+196 silly resolved     homepage: 'http://coffeescript.org',
+196 silly resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
+196 silly resolved     repository:
+196 silly resolved      { type: 'git',
+196 silly resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
+196 silly resolved     devDependencies:
+196 silly resolved      { 'uglify-js': '~2.2',
+196 silly resolved        jison: '>=0.2.0',
+196 silly resolved        'highlight.js': '~8.0.0',
+196 silly resolved        underscore: '~1.5.2',
+196 silly resolved        docco: '~0.7.0' },
+196 silly resolved     gitHead: '533ad8afe920b2dbf64ffb00efda45648242cc24',
+196 silly resolved     _id: 'coffee-script@1.9.1',
+196 silly resolved     _shasum: 'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31',
+196 silly resolved     _from: 'coffee-script@1.9.1',
+196 silly resolved     _npmVersion: '1.4.28',
+196 silly resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+196 silly resolved     maintainers: [ [Object], [Object] ],
+196 silly resolved     dist:
+196 silly resolved      { shasum: 'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31',
+196 silly resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz' },
+196 silly resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz' } ]
+197 info install bindings@1.2.1 into /var/lib/cloud9/WSN_BBB/node_modules/i2c
+198 info install repl@0.1.3 into /var/lib/cloud9/WSN_BBB/node_modules/i2c
+199 info install underscore@1.8.2 into /var/lib/cloud9/WSN_BBB/node_modules/i2c
+200 info install coffee-script@1.9.1 into /var/lib/cloud9/WSN_BBB/node_modules/i2c
+201 info installOne bindings@1.2.1
+202 info installOne repl@0.1.3
+203 info installOne underscore@1.8.2
+204 info installOne coffee-script@1.9.1
+205 verbose node_modules/i2c/node_modules/bindings unbuild
+206 verbose tar unpack /root/.npm/bindings/1.2.1/package.tgz
+207 silly lockFile 6b062a8d-odules-i2c-node-modules-bindings tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings
+208 verbose lock tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings /root/.npm/6b062a8d-odules-i2c-node-modules-bindings.lock
+209 silly lockFile 479db54d-t-npm-bindings-1-2-1-package-tgz tar:///root/.npm/bindings/1.2.1/package.tgz
+210 verbose lock tar:///root/.npm/bindings/1.2.1/package.tgz /root/.npm/479db54d-t-npm-bindings-1-2-1-package-tgz.lock
+211 verbose node_modules/i2c/node_modules/repl unbuild
+212 verbose node_modules/i2c/node_modules/underscore unbuild
+213 verbose node_modules/i2c/node_modules/coffee-script unbuild
+214 silly gunzTarPerm modes [ '755', '644' ]
+215 verbose tar unpack /root/.npm/repl/0.1.3/package.tgz
+216 silly lockFile c0111d16-de-modules-i2c-node-modules-repl tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl
+217 verbose lock tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl /root/.npm/c0111d16-de-modules-i2c-node-modules-repl.lock
+218 silly lockFile 524b9d18--root-npm-repl-0-1-3-package-tgz tar:///root/.npm/repl/0.1.3/package.tgz
+219 verbose lock tar:///root/.npm/repl/0.1.3/package.tgz /root/.npm/524b9d18--root-npm-repl-0-1-3-package-tgz.lock
+220 verbose tar unpack /root/.npm/underscore/1.8.2/package.tgz
+221 silly lockFile 63897645-ules-i2c-node-modules-underscore tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore
+222 verbose lock tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore /root/.npm/63897645-ules-i2c-node-modules-underscore.lock
+223 silly lockFile 23b73b6a-npm-underscore-1-8-2-package-tgz tar:///root/.npm/underscore/1.8.2/package.tgz
+224 verbose lock tar:///root/.npm/underscore/1.8.2/package.tgz /root/.npm/23b73b6a-npm-underscore-1-8-2-package-tgz.lock
+225 verbose tar unpack /root/.npm/coffee-script/1.9.1/package.tgz
+226 silly lockFile 8afbeb4f-s-i2c-node-modules-coffee-script tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script
+227 verbose lock tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script /root/.npm/8afbeb4f-s-i2c-node-modules-coffee-script.lock
+228 silly lockFile 71d4eb8f--coffee-script-1-9-1-package-tgz tar:///root/.npm/coffee-script/1.9.1/package.tgz
+229 verbose lock tar:///root/.npm/coffee-script/1.9.1/package.tgz /root/.npm/71d4eb8f--coffee-script-1-9-1-package-tgz.lock
+230 silly gunzTarPerm extractEntry package.json
+231 silly gunzTarPerm modes [ '755', '644' ]
+232 silly gunzTarPerm modes [ '755', '644' ]
+233 silly gunzTarPerm modes [ '755', '644' ]
+234 silly gunzTarPerm extractEntry README.md
+235 silly gunzTarPerm extractEntry bindings.js
+236 silly gunzTarPerm extractEntry test.js
+237 silly gunzTarPerm extractEntry package.json
+238 silly gunzTarPerm extractEntry package.json
+239 silly gunzTarPerm extractEntry README.md
+240 silly gunzTarPerm extractEntry package.json
+241 silly gunzTarPerm extractEntry README.md
+242 silly gunzTarPerm extractEntry LICENSE
+243 silly gunzTarPerm extractEntry .npmignore
+244 silly gunzTarPerm extractEntry README
+245 silly gunzTarPerm extractEntry index.js
+246 silly gunzTarPerm extractEntry lib/repl.js
+247 silly gunzTarPerm extractEntry README.md
+248 silly gunzTarPerm extractEntry LICENSE
+249 silly gunzTarPerm extractEntry underscore.js
+250 silly gunzTarPerm extractEntry underscore-min.js
+251 silly gunzTarPerm extractEntry underscore-min.map
+252 silly gunzTarPerm extractEntry register.js
+253 silly gunzTarPerm extractEntry repl.js
+254 silly gunzTarPerm extractEntry bin/cake
+255 silly gunzTarPerm extractEntry bin/coffee
+256 silly gunzTarPerm extractEntry bower.json
+257 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+258 silly lockFile 6b062a8d-odules-i2c-node-modules-bindings tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings
+259 silly lockFile 6b062a8d-odules-i2c-node-modules-bindings tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings
+260 silly lockFile 479db54d-t-npm-bindings-1-2-1-package-tgz tar:///root/.npm/bindings/1.2.1/package.tgz
+261 silly lockFile 479db54d-t-npm-bindings-1-2-1-package-tgz tar:///root/.npm/bindings/1.2.1/package.tgz
+262 info preinstall bindings@1.2.1
+263 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+264 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+265 verbose readDependencies using package.json deps
+266 verbose readDependencies using package.json deps
+267 silly resolved []
+268 verbose about to build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings
+269 info build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/bindings
+270 verbose linkStuff [ false,
+270 verbose linkStuff   false,
+270 verbose linkStuff   false,
+270 verbose linkStuff   '/var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules' ]
+271 info linkStuff bindings@1.2.1
+272 verbose linkBins bindings@1.2.1
+273 verbose linkMans bindings@1.2.1
+274 verbose rebuildBundles bindings@1.2.1
+275 info install bindings@1.2.1
+276 silly lockFile c0111d16-de-modules-i2c-node-modules-repl tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl
+277 silly lockFile c0111d16-de-modules-i2c-node-modules-repl tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl
+278 silly lockFile 524b9d18--root-npm-repl-0-1-3-package-tgz tar:///root/.npm/repl/0.1.3/package.tgz
+279 silly lockFile 524b9d18--root-npm-repl-0-1-3-package-tgz tar:///root/.npm/repl/0.1.3/package.tgz
+280 info postinstall bindings@1.2.1
+281 info preinstall repl@0.1.3
+282 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+283 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+284 verbose readDependencies using package.json deps
+285 verbose readDependencies using package.json deps
+286 silly resolved []
+287 verbose about to build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl
+288 info build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/repl
+289 verbose linkStuff [ false,
+289 verbose linkStuff   false,
+289 verbose linkStuff   false,
+289 verbose linkStuff   '/var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules' ]
+290 info linkStuff repl@0.1.3
+291 verbose linkBins repl@0.1.3
+292 verbose linkMans repl@0.1.3
+293 verbose rebuildBundles repl@0.1.3
+294 info install repl@0.1.3
+295 info postinstall repl@0.1.3
+296 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+297 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+298 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+299 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+300 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+301 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+302 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+303 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+304 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+305 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+306 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+307 silly gunzTarPerm extractEntry CNAME
+308 silly gunzTarPerm extractEntry CONTRIBUTING.md
+309 silly lockFile 63897645-ules-i2c-node-modules-underscore tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore
+310 silly lockFile 63897645-ules-i2c-node-modules-underscore tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore
+311 silly lockFile 23b73b6a-npm-underscore-1-8-2-package-tgz tar:///root/.npm/underscore/1.8.2/package.tgz
+312 silly lockFile 23b73b6a-npm-underscore-1-8-2-package-tgz tar:///root/.npm/underscore/1.8.2/package.tgz
+313 info preinstall underscore@1.8.2
+314 verbose readDependencies using package.json deps
+315 verbose readDependencies using package.json deps
+316 silly resolved []
+317 verbose about to build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore
+318 info build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/underscore
+319 verbose linkStuff [ false,
+319 verbose linkStuff   false,
+319 verbose linkStuff   false,
+319 verbose linkStuff   '/var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules' ]
+320 info linkStuff underscore@1.8.2
+321 verbose linkBins underscore@1.8.2
+322 verbose linkMans underscore@1.8.2
+323 verbose rebuildBundles underscore@1.8.2
+324 info install underscore@1.8.2
+325 info postinstall underscore@1.8.2
+326 silly lockFile 8afbeb4f-s-i2c-node-modules-coffee-script tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script
+327 silly lockFile 8afbeb4f-s-i2c-node-modules-coffee-script tar:///var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script
+328 silly lockFile 71d4eb8f--coffee-script-1-9-1-package-tgz tar:///root/.npm/coffee-script/1.9.1/package.tgz
+329 silly lockFile 71d4eb8f--coffee-script-1-9-1-package-tgz tar:///root/.npm/coffee-script/1.9.1/package.tgz
+330 info preinstall coffee-script@1.9.1
+331 verbose readDependencies using package.json deps
+332 verbose readDependencies using package.json deps
+333 silly resolved []
+334 verbose about to build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script
+335 info build /var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/coffee-script
+336 verbose linkStuff [ false,
+336 verbose linkStuff   false,
+336 verbose linkStuff   false,
+336 verbose linkStuff   '/var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules' ]
+337 info linkStuff coffee-script@1.9.1
+338 verbose linkBins coffee-script@1.9.1
+339 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+339 verbose link bins   '/var/lib/cloud9/WSN_BBB/node_modules/i2c/node_modules/.bin',
+339 verbose link bins   false ]
+340 verbose linkMans coffee-script@1.9.1
+341 verbose rebuildBundles coffee-script@1.9.1
+342 info install coffee-script@1.9.1
+343 info postinstall coffee-script@1.9.1
+344 verbose about to build /var/lib/cloud9/WSN_BBB/node_modules/i2c
+345 info build /var/lib/cloud9/WSN_BBB/node_modules/i2c
+346 verbose linkStuff [ false, false, false, '/var/lib/cloud9/WSN_BBB/node_modules' ]
+347 info linkStuff i2c@0.2.1
+348 verbose linkBins i2c@0.2.1
+349 verbose linkMans i2c@0.2.1
+350 verbose rebuildBundles i2c@0.2.1
+351 verbose rebuildBundles [ '.bin', 'bindings', 'coffee-script', 'repl', 'underscore' ]
+352 info install i2c@0.2.1
+353 verbose unsafe-perm in lifecycle false
+354 info i2c@0.2.1 Failed to exec install script
+355 verbose node_modules/i2c unbuild
+356 warn This failure might be due to the use of legacy binary "node"
+357 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+358 info preuninstall i2c@0.2.1
+359 info uninstall i2c@0.2.1
+360 verbose true,/var/lib/cloud9/WSN_BBB/node_modules,/var/lib/cloud9/WSN_BBB/node_modules unbuild i2c@0.2.1
+361 info postuninstall i2c@0.2.1
+362 error i2c@0.2.1 install: `node-gyp rebuild`
+362 error Exit status 1
+363 error Failed at the i2c@0.2.1 install script.
+363 error This is most likely a problem with the i2c package,
+363 error not with npm itself.
+363 error Tell the author that this fails on your system:
+363 error     node-gyp rebuild
+363 error You can get their info via:
+363 error     npm owner ls i2c
+363 error There is likely additional logging output above.
+364 error System Linux 3.8.13-bone72
+365 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "i2c" "--save"
+366 error cwd /var/lib/cloud9/WSN_BBB
+367 error node -v v0.10.38
+368 error npm -v 1.4.21
+369 error code ELIFECYCLE
+370 verbose exit [ 1, true ]

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Remote AT Command Request gui css -----------------------------------------*/
+/* Define width of select menu. horizontal-select class was added using Jquery*/
+.ui-select.horizontal-select {
+    float: left;
+    top: -6px;
+}
+
+/* Define text input width size. horizontal-text class was added using Jquery*/
+.ui-input-text.horizontal-text {
+    position: relative;
+    float: left;
+    margin-left: 4%;
+    top: -10px;
+    width: 90px !important;
+}
+
+#xbee-cmd-send {
+    position: relative;
+    float: left;
+    margin-left: 4%;
+    top: -7px;
+}
+
+
+/* Logo and info on footer css. index.html and sensordata.html require it-----*/
+#logo-footer {
+    position: relative;
+    float: left;
+    margin-left: 35%;
+    margin-top: 5px;
+    /*margin-left: 0 auto;
+    margin-right: 0 auto;*/
+}
+#title-footer {
+    position: relative;
+    float: left;
+    margin-left: 12px;
+}
+#connectionStatus {
+    position: relative; 
+    float: right;
+    margin-right: 3%;
+    margin-top: 12px;
+}
