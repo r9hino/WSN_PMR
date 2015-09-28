@@ -46,7 +46,8 @@ var jsonSystemState = loadSystemState(jsonFileName);    // Load to memory system
 
 // ThingSpeak initialization.
 var thingspeak = new ThingSpeakClient();
-thingspeak.attachChannel(32544, {writeKey:'QSGVTNFA0SCP4TP7'}, function(error){
+var thingSpeakChannelID = 58003;
+thingspeak.attachChannel(thingSpeakChannelID, {writeKey:'UAWAASL2VIZLWOP4'}, function(error){
     if(error)   return console.error('ThingSpeak BBB Linux Stats ' + error);
     console.log('Thingspeak BBB Linux Stats channel ready.');
 });
@@ -261,10 +262,13 @@ function socketConnection(socket){
         else if(schedulerJob[devId] instanceof cronJob) schedulerJob[devId].stop();
 
         // Store new values into json file systemState.json
+        //var tic = new Date();
         fs.writeFile(jsonFileName, JSON.stringify(jsonSystemState, null, 4), function (err) {
             if(err) console.log(err);
             //else console.log("JSON file saved at " + jsonFileName);
         });
+        //var toc = new Date();
+        //console.log("Operation took " + (toc.getTime() - tic.getTime()) + " ms"); 
     }       // End updateSystemState() function.
 }           // End function socketConnection().
 
@@ -278,7 +282,7 @@ function listenerCallback(nodeInfoChanged, nodeSummary){
     }
 }
 // Xbee frame listeners. The frame type determine which function is called.
-//xbeeAPI.on("frame_object", xbeeFrameListener);
+// xbeeAPI.on("frame_object", xbeeFrameListener);
 function xbeeFrameListener(frame){
     switch(frame.type){
         // AT Command Response.
@@ -319,9 +323,9 @@ function writeThingSpeakBBBLinuxStats(){
             field2: result.memoryInfo.rss/500000000*100,    // 500 mb RAM.
             field3: processMem.heapUsed/processMem.heapTotal*100
         };
-        thingspeak.updateChannel(32544, fieldsUpdate, function(err, resp){
+        thingspeak.updateChannel(thingSpeakChannelID, fieldsUpdate, function(err, resp){
             if(err || resp <= 0) return console.error('An error ocurred while updating ThingSpeak BBB Linux Stats Channel.');
-        //else console.log('Update successfully. Entry number was: ' + resp);
+            else console.log('Update successfully. Entry number was: ' + resp);
         });      
     });
 }
