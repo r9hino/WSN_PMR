@@ -262,13 +262,13 @@ function socketConnection(socket){
         else if(schedulerJob[devId] instanceof cronJob) schedulerJob[devId].stop();
 
         // Store new values into json file systemState.json
-        //var tic = new Date();
+        var tic = new Date();
         fs.writeFile(jsonFileName, JSON.stringify(jsonSystemState, null, 4), function (err) {
             if(err) console.log(err);
             //else console.log("JSON file saved at " + jsonFileName);
         });
-        //var toc = new Date();
-        //console.log("Operation took " + (toc.getTime() - tic.getTime()) + " ms"); 
+        var toc = new Date();
+        console.log("Operation took " + (toc.getTime() - tic.getTime()) + " ms"); 
     }       // End updateSystemState() function.
 }           // End function socketConnection().
 
